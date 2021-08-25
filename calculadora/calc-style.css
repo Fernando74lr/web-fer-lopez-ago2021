@@ -1,0 +1,32 @@
+body {
+    padding: 100px;
+}
+
+#box {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#calc-container {
+    margin-top: 20px;
+}
+
+#calc-container div {
+    margin-bottom: 5px;
+}
+
+#display {
+    border: 1px solid #198754;
+    border-radius: 5px;
+    width: 300px;
+    text-align: right;
+    padding-right: 10px;
+    color: #198754;
+}
+
+button {
+    font-size: 30px!important;
+    border: none!important;
+}
