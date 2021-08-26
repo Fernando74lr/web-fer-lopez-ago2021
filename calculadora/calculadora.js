@@ -1,4 +1,3 @@
-
 // Display
 const value = $('#value');
 
@@ -107,3 +106,13 @@ $('#btn-pow').click(function (e) { change_display(e) });
 
 // Button clear
 $('#btn-clear').click(function (e) { clear_display() });
+
+const greeting = () => {
+    let hour = new Date().getHours();
+    if (hour < 12) return 'Good morning 👋';
+    if (hour >= 12 && hour < 18) return 'Good afternoon 👋';
+    if (hour >= 18 && hour < 20) return 'Good evening 🌗';
+    if (hour >= 20) return 'Good night 🌙';
+}
+
+$('#greeting').html(greeting());
